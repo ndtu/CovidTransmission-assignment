@@ -18,7 +18,7 @@ int finalHour = (secondHour - firstHour) * 60;
 int finalMinute = (secondMinute - firstMinute);
 
 int finalContact = finalDay + finalHour + finalMinute;
-    if(finalContact <= 60) {
+    if(finalContact <= 60 && finalContact > 0) {
         System.out.println(finalContact + " low");
     }
     else if(finalContact >= 60 && finalContact <= 180 ) {
