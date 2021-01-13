@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class CovidTransmission {
     public static void main(String[] args){
-System.out.print("Please enter two integers: "); 
 
 Scanner sc = new Scanner(System.in); 
 
