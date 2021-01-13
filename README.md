@@ -19,13 +19,13 @@ int finalContact = finalDay + finalHour + finalMinute;
     if(finalContact <= 60 && finalContact > 0) {
         System.out.println(finalContact + " low");
     }
-    else if(finalContact >= 60 && finalContact <= 180 ) {
+    if(finalContact >= 60 && finalContact <= 180 ) {
         System.out.println(finalContact + " medium");
     }
-    else if(finalContact > 180 && finalContact <= 360) {
+    if(finalContact > 180 && finalContact <= 360) {
         System.out.println(finalContact + " high");
     }
-    else if(finalContact > 360) {
+    if(finalContact > 360) {
         System.out.println(finalContact + " HIGH");
     }
     else {
