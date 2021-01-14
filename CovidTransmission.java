@@ -36,9 +36,6 @@ int finalContact = finalDay + finalHour + finalMinute;
     else if(finalContact > 360) {
         System.out.println(finalContact + " HIGH");
     }
-    else if(extraDay == 9) {
-        System.out.println("-1 -1");
-    }
     
     else {
         System.out.println("-1 -1");
