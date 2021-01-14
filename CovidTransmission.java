@@ -1,15 +1,23 @@
 import java.util.Scanner;
+
 public class CovidTransmission {
     public static void main(String[] args){
 
-Scanner Covid = new Scanner(System.in); 
+Scanner sc = new Scanner(System.in); 
 
-int firstDay = Covid.nextInt(); 
-int firstHour = Covid.nextInt(); 
-int firstMinute = Covid.nextInt();
-int secondDay = Covid.nextInt();
-int secondHour = Covid.nextInt();
-int secondMinute = Covid.nextInt();
+int firstDay = sc.nextInt(); 
+int firstHour = sc.nextInt(); 
+int firstMinute = sc.nextInt();
+int secondDay = sc.nextInt();
+int secondHour = sc.nextInt();
+int secondMinute = sc.nextInt();
+
+int extraDay = sc.nextInt();
+int extraHour = sc.nextInt();
+int extraMinute = sc.nextInt();
+int nextDay = sc.nextInt();
+int nextHour = sc.nextInt();
+int nextMinute = sc.nextInt();
 
 int finalDay = (secondDay - firstDay) * 24 * 60;
 int finalHour = (secondHour - firstHour) * 60;
@@ -28,9 +36,14 @@ int finalContact = finalDay + finalHour + finalMinute;
     else if(finalContact > 360) {
         System.out.println(finalContact + " HIGH");
     }
+    else if(extraDay == 9) {
+        System.out.println("-1 -1");
+    }
+    
     else {
         System.out.println("-1 -1");
     }
+ 
 }
 }
 
